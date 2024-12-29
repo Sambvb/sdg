@@ -1,3 +1,9 @@
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 void warshall(vector<vector<int>>& adj) {
     int n = adj.size();
     vector<vector<int>> r = adj;
