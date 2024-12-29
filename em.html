@@ -1,1 +1,277 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #a5c9e6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 25px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            color: #3498db;
+            border-bottom: 3px solid #a5c9e6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Elevated button styles */
+        .elevated-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .elevated-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+        }
+
+        .elevated-button:active {
+            transform: translateY(1px);
+        }
+
+        article {
+            background-color: #f9f5f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.3s ease;
+        }
+
+        article:hover {
+            background-color: #f1f1f1;
+        }
+
+        h3 {
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li:before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 15px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #a5c9e6;
+            color: #2c3e50;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content remains unchanged -->
+    </header>
+    <main>
+        
+
+            <h1>Smart Energy Management Systems</h1>
+        
+
+        <section class="section">
+            <h2>Key Issues in Traditional Energy Systems</h2>
+            <ul>
+                <li><strong>Energy Waste</strong>: Inefficient distribution causes waste and excessive energy use during non-peak times.</li>
+                <li><strong>Unpredictable Costs</strong>: Fluctuating prices and lack of real-time data prevent optimal energy use.</li>
+                <li><strong>Environmental Impact</strong>: Conventional energy sources increase carbon emissions, and poor networks lead to more energy loss.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Optimization Algorithms</h2>
+            <ul>
+                <li><strong>Dijkstra's Algorithm</strong>: <em>Purpose</em>: Finds efficient energy routes, minimizing loss and cost.</li>
+                <li><strong>Reinforcement Learning</strong>: <em>Purpose</em>: Adjusts energy consumption based on real-time data to match demand.</li>
+                <li><strong>Floyd-Warshall Algorithm</strong>: <em>Purpose</em>: Optimizes overall energy distribution by calculating the shortest paths across the network.</li>
+                <li><strong>Greedy Algorithms</strong>: <em>Purpose</em>: Balances energy during peak demand for efficiency.</li>
+                <li><strong>Kruskal’s & Prim’s Algorithms</strong>: <em>Purpose</em>: Builds efficient network connections, reducing infrastructure costs.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Advantages</h2>
+            <ul>
+                <li><strong>Reduced Waste</strong>: Efficient delivery avoids overuse.</li>
+                <li><strong>Environmental Benefits</strong>: Optimized routing and renewable energy reduce emissions.</li>
+                <li><strong>Cost Savings</strong>: Better scheduling and dynamic pricing lower costs for both providers and consumers.</li>
+                <li><strong>Improved Reliability</strong>: Adaptive algorithms ensure stable supply, even during peak demand.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Energy Metrics in Skyline Harmony</h2>
+            <ul>
+                <li><strong>High-Demand Zones</strong>: 15 areas with varied energy needs.</li>
+                <li><strong>Renewable Integration</strong>: 5 solar and wind farms contribute to the grid.</li>
+                <li><strong>Grid Load</strong>: 8 key nodes manage up to 400 MW during peak times.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Goals for Skyline Harmony’s Energy System</h2>
+            <ul>
+                <li><strong>Reduce Waste</strong>: Use algorithms to optimize energy distribution.</li>
+                <li><strong>Improve Efficiency</strong>: Monitor use and adjust prices to encourage off-peak consumption.</li>
+                <li><strong>Promote Sustainability</strong>: Increase renewable energy use and reduce environmental impact.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Core Benefits</h2>
+            <ul>
+                <li>Efficient energy distribution.</li>
+                <li>Reliable energy supply, even during peak demand.</li>
+                <li>Lower infrastructure costs.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Dynamic management via smart grids.</li>
+                <li>Scalability for renewable energy integration.</li>
+                <li>Real-time peak demand management.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>1. Dijkstra's Algorithm for Optimizing Energy Routes</h2>
+            <p>Dijkstra’s Algorithm finds the shortest path from a power source to consumers, reducing energy loss.</p>
+            <ul>
+                <li><strong>Nodes</strong>: Power plants, substations, and consumers.</li>
+                <li><strong>Edges</strong>: Energy transmission paths.</li>
+                <li><strong>Weight</strong>: Energy loss, cost, or time.</li>
+            </ul>
+            <p><strong>How It Works</strong>: It calculates the best route to minimize energy loss.</p>
+        </section>
+
+        <section class="section">
+            <h2>2. Floyd-Warshall Algorithm for Load Balancing</h2>
+            <p>Floyd-Warshall Algorithm finds the shortest paths between all network nodes, optimizing energy distribution.</p>
+            <ul>
+                <li><strong>Nodes</strong>: Power plants, substations, consumers.</li>
+                <li><strong>Edges</strong>: Transmission lines.</li>
+            </ul>
+            <p><strong>How It Works</strong>: It balances energy supply and demand across the grid to avoid overloads.</p>
+        </section>
+
+        <section class="section">
+            <h2>Conclusion</h2>
+            <p><strong>Dijkstra’s Algorithm</strong>: Optimizes real-time energy routes.</p>
+            <p><strong>Floyd-Warshall Algorithm</strong>: Balances energy load and optimizes the entire network.</p>
+            <p>These algorithms work together to improve energy efficiency and reliability, ensuring a stable, sustainable, and cost-effective energy system in Skyline Harmony.</p>
+        </section>  </main>
+</body>
+</html>
