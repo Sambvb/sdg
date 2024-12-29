@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
         * {
             box-sizing: border-box;
@@ -45,6 +43,7 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
             padding: 25px;
+            position: relative;
             transition: transform 0.3s ease;
         }
 
@@ -57,6 +56,29 @@
             border-bottom: 3px solid #a5c9e6;
             padding-bottom: 10px;
             margin-bottom: 20px;
+        }
+
+        /* Elevated button styles */
+        .elevated-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .elevated-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+        }
+
+        .elevated-button:active {
+            transform: translateY(1px);
         }
 
         article {
@@ -149,32 +171,34 @@
 </head>
 <body>
     <header>
-       
+        <!-- Header content remains unchanged -->
     </header>
     <main>
-        <!-- Entire previous HTML content remains the same -->
-        <!-- I'll include the full content from the original HTML -->
-               <!-- Smart Public Transport Systems Section -->
-<section>
-  <h2>1) Smart Public Transport Systems</h2>
-  <p><strong>SDG Alignment:</strong> SDG 11.2 – Access to Safe, Affordable, and Sustainable Transport Systems</p>
-  <p>This use case uses smart technology to create efficient, accessible, and eco-friendly public transport. It reduces traffic and pollution by optimizing routes with <strong>shortest path algorithms, graph analysis, and AI predictions</strong>. Real-time tracking, electric vehicles, and smart scheduling make travel easier, safer, and more sustainable for everyone.</p>
-</section>
+        <!-- Smart Public Transport Systems Section -->
+        <section>
+            <h2>1) Smart Public Transport Systems</h2>
+            <p><strong>SDG Alignment:</strong> SDG 11.2 – Access to Safe, Affordable, and Sustainable Transport Systems</p>
+            <p>This use case uses smart technology to create efficient, accessible, and eco-friendly public transport. It reduces traffic and pollution by optimizing routes with <strong>shortest path algorithms, graph analysis, and AI predictions</strong>. Real-time tracking, electric vehicles, and smart scheduling make travel easier, safer, and more sustainable for everyone.</p>
+            <a href="http://example.com/transport" class="elevated-button">Learn More</a> <!-- Replace with actual link -->
+        </section>
 
-<!-- Smart Waste Management Systems Section -->
-<section>
-  <h2>2) Smart Waste Management Systems</h2>
-  <p><strong>SDG Alignment:</strong> SDG 11.6 – Reduce Environmental Impact</p>
-  <p>This use case uses smart technology to create efficient and sustainable waste management. It reduces pollution and improves recycling by planning waste collection routes with smart algorithms like <strong>shortest path, genetic algorithms, and clustering techniques</strong>. Real-time tracking, smart bins, and flexible scheduling make waste collection faster, cleaner, and better for the environment.</p>
-</section>
+        <!-- Smart Waste Management Systems Section -->
+        <section>
+            <h2>2) Smart Waste Management Systems</h2>
+            <p><strong>SDG Alignment:</strong> SDG 11.6 – Reduce Environmental Impact</p>
+            <p>This use case uses smart technology to create efficient and sustainable waste management. It reduces pollution and improves recycling by planning waste collection routes with smart algorithms like <strong>shortest path, genetic algorithms, and clustering techniques</strong>. Real-time tracking, smart bins, and flexible scheduling make waste collection faster, cleaner, and better for the environment.</p>
+            <a href="http://example.com/waste" class="elevated-button">Learn More</a> <!-- Replace with actual link -->
+        </section>
 
-<!-- Smart Water Management Systems Section -->
-<section>
-  <h2>3) Smart Water Management Systems</h2>
-  <p><strong>SDG Alignment:</strong> SDG 6 – Clean Water and Sanitation</p>
-  <p>This use case uses smart technology to manage water resources efficiently, ensure clean water access, and minimize waste. It plans the best water distribution routes with <strong>Dijkstra's and Kruskal's algorithms</strong>. Real-time tracking, sensor networks, and smart scheduling help improve water supply, make distribution fair, and protect the environment.</p>
-</section>
+        <!-- Smart Water Management Systems Section -->
+        <section>
+            <h2>3) Smart Water Management Systems</h2>
+            <p><strong>SDG Alignment:</strong> SDG 6 – Clean Water and Sanitation</p>
+            <p>This use case uses smart technology to manage water resources efficiently, ensure clean water access, and minimize waste. It plans the best water distribution routes with <strong>Dijkstra's and Kruskal's algorithms</strong>. Real-time tracking, sensor networks, and smart scheduling help improve water supply, make distribution fair, and protect the environment.</p>
+            <a href="http://example.com/water" class="elevated-button">Learn More</a> <!-- Replace with actual link -->
+        </section>
 
+        
    <section id="dijkstra">
         <h2>Dijkstra's Algorithm</h2>
         <p><strong>Application:</strong> Used for improving traffic flow in Connected Public Transport and Transport Management, which directly helps reduce emissions.</p>
@@ -224,8 +248,7 @@
     </section>
         
         
-        
-        <!-- All other sections from the original HTML remain unchanged -->
+
     </main>
 </body>
 </html>
