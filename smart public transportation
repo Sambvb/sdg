@@ -1,1 +1,449 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #a5c9e6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 25px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            color: #3498db;
+            border-bottom: 3px solid #a5c9e6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Elevated button styles */
+        .elevated-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .elevated-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+        }
+
+        .elevated-button:active {
+            transform: translateY(1px);
+        }
+
+        article {
+            background-color: #f9f5f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.3s ease;
+        }
+
+        article:hover {
+            background-color: #f1f1f1;
+        }
+
+        h3 {
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li:before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 15px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #a5c9e6;
+            color: #2c3e50;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content remains unchanged -->
+    </header>
+    <main>
+        
+        
+        
+<section class="section">
+        <h2>Smart public transport in Skyline Harmony</h2>
+        <p>Smart public transport systems are a cornerstone of modern urban traffic management, playing a critical role in reducing congestion, enhancing efficiency, and promoting sustainability. In Skyline Harmony, these systems aim to address traffic challenges while ensuring eco-friendly and seamless urban mobility.</p>
+    </section>
+
+    <section class="section">
+        <h2>Key Inefficiencies in Traditional Public Transport</h2>
+        <ul>
+            <li><strong>Overcrowding:</strong>
+                <ul>
+                    <li>Insufficient capacity in buses and trains leads to discomfort, discouraging regular use.</li>
+                    <li>Overcrowded vehicles often result in longer boarding times, further delaying schedules.</li>
+                </ul>
+            </li>
+            <li><strong>Unreliable Schedules:</strong>
+                <ul>
+                    <li>Variability in arrival times erodes commuter trust, leading to increased dependence on private vehicles.</li>
+                    <li>Lack of real-time updates leaves passengers uncertain about delays or changes.</li>
+                </ul>
+            </li>
+            <li><strong>Environmental Impact:</strong>
+                <ul>
+                    <li>Inefficient route planning causes excessive fuel consumption, increasing emissions.</li>
+                    <li>Conventional fuel-powered vehicles contribute significantly to air pollution and climate change.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+     
+    <section class="section">
+        <h2>Optimization Algorithms for Traffic and Transport Management</h2>
+        <ul>
+            <li><strong>Dijkstra's Algorithm:</strong>
+                <ul>
+                    <li><strong>Purpose:</strong> Determines the shortest path between two points.</li>
+                    <li><strong>Application:</strong> Guides public transport routing for minimal travel time and distance.</li>
+                </ul>
+            </li>
+            <li><strong>Reinforcement Learning:</strong>
+                <ul>
+                    <li><strong>Purpose:</strong> Adapts traffic signals and congestion management dynamically.</li>
+                    <li><strong>Application:</strong> Utilizes traffic density data to optimize signal timing in real time.</li>
+                </ul>
+            </li>
+            <li><strong>Floyd-Warshall Algorithm:</strong>
+                <ul>
+                    <li><strong>Purpose:</strong> Finds shortest paths between all pairs of points in a network.</li>
+                    <li><strong>Application:</strong> Supports city-wide optimization for public transport and routing networks.</li>
+                </ul>
+            </li>
+            <li><strong>Greedy Algorithms:</strong>
+                <ul>
+                    <li><strong>Purpose:</strong> Makes local optimization decisions to achieve global results quickly.</li>
+                    <li><strong>Application:</strong> Ideal for simpler problems like adjusting bus schedules for peak-hour demands.</li>
+                </ul>
+            </li>
+            <li><strong>Kruskal’s &amp; Prim’s Algorithms:</strong>
+                <ul>
+                    <li><strong>Purpose:</strong> Build minimum spanning trees (MST) for network optimization.</li>
+                    <li><strong>Application:</strong> Used in infrastructure planning to minimize construction costs for transport networks.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Advantages of Implementing Smart Public Transport</h2>
+        <ul>
+            <li><strong>Reduced Congestion:</strong> 
+                <ul>
+                    <li>A well-planned transport system reduces reliance on private vehicles.</li>
+                    <li>Prioritizing buses and trains ensures smoother traffic flow on city roads.</li>
+                </ul>
+            </li>
+            <li><strong>Environmental Benefits:</strong> 
+                <ul>
+                    <li>Adoption of electric buses and optimized routing minimizes fuel consumption and emissions.</li>
+                    <li>Use of solar-powered stations and charging infrastructure further lowers the carbon footprint.</li>
+                </ul>
+            </li>
+            <li><strong>Cost Savings:</strong> 
+                <ul>
+                    <li>Advanced scheduling and route planning reduce operational costs for transport agencies.</li>
+                    <li>Affordable ticketing and efficient services improve public access to transportation.</li>
+                </ul>
+            </li>
+            <li><strong>Improved Connectivity:</strong> 
+                <ul>
+                    <li>Integration of buses, trains, and last-mile connectivity options ensures seamless transitions.</li>
+                    <li>Enhanced connectivity encourages higher usage of public transport systems.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Urban Traffic Metrics in Skyline Harmony</h2>
+        <ul>
+            <li><strong>Intersections:</strong> 10 traffic lights, 7 pedestrian crossings, 5 roundabouts.</li>
+            <li><strong>High-Traffic Areas:</strong> 6 congestion zones with vehicle flows averaging 350 vehicles/hour.</li>
+            <li><strong>Entry/Exit Points:</strong> 12 key points handling up to 300 vehicles/hour.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Goals for Skyline Harmonys Traffic System</h2>
+        <ul>
+            <li><strong>Reduce Congestion in High-Density Areas:</strong>
+                <ul>
+                    <li>Employ optimization algorithms to streamline traffic flow at critical intersections and congestion zones.</li>
+                    <li>Introduce intelligent traffic signals that adapt to real-time vehicle counts.</li>
+                </ul>
+            </li>
+            <li><strong>Enhance Public Transport Efficiency:</strong>
+                <ul>
+                    <li>Implement real-time tracking systems to provide accurate arrival times for buses and trains.</li>
+                    <li>Introduce dynamic scheduling to adjust for peak-hour demand, ensuring sufficient capacity.</li>
+                    <li>Integrate multiple transport modes, including buses, trains, and ride-sharing, for seamless commutes.</li>
+                </ul>
+            </li>
+            <li><strong>Ensure Environmental Sustainability:</strong>
+                <ul>
+                    <li>Promote the use of green technologies, such as electric and hybrid buses.</li>
+                    <li>Optimize routes to reduce idle time and fuel consumption.</li>
+                    <li>Install solar-powered charging stations at key transport hubs.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <section id="dijkstra algorithm">
+  <h2>Overview of Dijkstra  Algorithm in Smart Transportation</h2>
+
+  <article id="applications">
+    <h3>Applications</h3>
+    <ul>
+      <li>
+        <strong>Intelligent Navigation</strong>
+        <ul>
+          <li>Finds the quickest routes using AI and traffic updates.</li>
+          <li>Helps predict congestion and locate parking.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Emergency Vehicle Routing</strong>
+        <ul>
+          <li>Prioritizes emergency vehicles for faster response.</li>
+          <li>Dynamically adjusts routes based on real-time traffic.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Sustainability</strong>
+        <ul>
+          <li>Plans carbon-efficient routes.</li>
+          <li>Supports EV charging station integration.</li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+
+  <article id="key-features">
+    <h3>Key Features</h3>
+    <ul>
+      <li>Adapts to city growth with scalable design.</li>
+      <li>Enhances traffic flow with smart network management.</li>
+      <li>Improves emergency response efficiency.</li>
+    </ul>
+  </article>
+
+
+<section id="dijkstra-traffic-management">
+   
+
+    <h3>How It Works</h3>
+    <ol>
+        <li><strong>Initialization:</strong>
+            <ul>
+                <li>Load road network data (e.g., from a file like "city_map.txt").</li>
+                <li>Set distances to all buildings as infinity, except for the starting point.</li>
+                <li>Mark the starting point as visited.</li>
+            </ul>
+        </li>
+        <li><strong>Find Minimum Distance:</strong>
+            <ul>
+                <li>Choose the unvisited node with the smallest distance.</li>
+            </ul>
+        </li>
+        <li><strong>Update Distances:</strong>
+            <ul>
+                <li>For each neighbor of the chosen node:</li>
+                <ul>
+                    <li>Calculate the new distance through this node.</li>
+                    <li>Update if the new distance is smaller than the current one.</li>
+                </ul>
+            </ul>
+        </li>
+        <li><strong>Repeat:</strong>
+            <ul>
+                <li>Continue until all nodes are visited.</li>
+            </ul>
+        </li>
+        
+    </ol>
+    <section id="complexity-analysis">
+    <h3>Time and Space Complexity Analysis</h3>
+    <h4>Time Complexity:</h4>
+    <ul>
+        <li><strong>Loading Network (loadNetwork):</strong> <code>O(m)</code>, where <em>m</em> is the number of edges.</li>
+        <li><strong>Initialization (init):</strong> <code>O(n)</code>, where <em>n</em> is the number of nodes.</li>
+        <li><strong>Shortest Paths Calculation (calcSP):</strong> <code>O(n<sup>3</sup>)</code>.</li>
+        <li><strong>Printing Shortest Paths (printSP):</strong> <code>O(n<sup>2</sup>)</code>.</li>
+        <li><strong>Overall Time Complexity:</strong> <code>O(n<sup>3</sup>)</code>.</li>
+    </ul>
+
+    <h4>Space Complexity:</h4>
+    <ul>
+        <li><strong>Adjacency Matrix (adjMat):</strong> <code>O(n<sup>2</sup>)</code>.</li>
+        <li><strong>Distance Array (dist), Predecessor Array (pred), Visited Array (vis):</strong> <code>O(n)</code>.</li>
+        <li><strong>Mapping Data Structures (nodeToIdx, idxToNode):</strong> <code>O(n)</code>.</li>
+        <li><strong>Overall Space Complexity:</strong> <code>O(n<sup>2</sup>)</code>.</li>
+    </ul>
+</section>
+   
+   
+   <a href="nextpage.html" class="elevated-button">code</a> 
+     <a href="nextpage.html" class="elevated-button">input</a> 
+   
+   
+
+    <h3>Technological Tools Required</h3>
+    <ul>
+        <li><strong>Hardware:</strong> Cameras, IoT sensors, GPS devices.</li>
+        <li><strong>Software:</strong> AI for predictions, real-time data processing systems.</li>
+        <li><strong>Integration:</strong> Cloud platforms to manage and optimize traffic data.</li>
+    </ul>
+
+    <h3>Other Enhancements</h3>
+    <ul>
+        <li><strong>Smart Traffic Lights:</strong> Adjust timings based on vehicle density.</li>
+        <li><strong>AI-Powered Systems:</strong> Use data analytics and predictions for proactive management.</li>
+        <li><strong>V2I Communication:</strong> Vehicles interact with infrastructure for smoother traffic flow.</li>
+        <li><strong>Congestion Pricing:</strong> Discourage peak-hour travel through toll adjustments.</li>
+    </ul>
+
+    <h3>Data Collection & Adaptation</h3>
+    <ul>
+        <li>Sensors, cameras, and GPS gather real-time traffic data.</li>
+        <li>Cloud systems analyze this data and provide updates to navigation apps and traffic lights.</li>
+        <li>Routes and signals adjust dynamically to keep traffic moving efficiently.</li>
+    </ul>
+     </section>
+  <article id="real-time-uses">
+    <h3>Real-Time Uses</h3>
+    <ul>
+      <li>Quickly reroutes traffic during accidents or roadblocks.</li>
+      <li>Distributes vehicles evenly to minimize congestion.</li>
+      <li>Identifies optimal locations for EV charging stations.</li>
+    </ul>
+  </article>
+</section>
+
+    <h3>Conclusion</h3>
+    <p>Dijkstra's Algorithm optimizes urban traffic flow, reduces congestion, and minimizes environmental impact. By integrating it with advanced tools like AI or Machine Learning, cities like Skyline Hormany can create smarter, more sustainable traffic systems for the future.</p>
+
+    </main>
+</body>
+</html>
