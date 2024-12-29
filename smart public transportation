@@ -443,6 +443,205 @@
 
     <h3>Conclusion</h3>
     <p>Dijkstra's Algorithm optimizes urban traffic flow, reduces congestion, and minimizes environmental impact. By integrating it with advanced tools like AI or Machine Learning, cities like Skyline Hormany can create smarter, more sustainable traffic systems for the future.</p>
+      
+       
+        <section>
+        <div class="header">Graph Input Data</div>
+        <table>
+            <tr>
+                <th>Intersection A</th>
+                <th>Intersection B</th>
+                <th>Weight</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>C</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>D</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>E</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>C</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>E</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>F</td>
+                <td>15</td>
+            </tr>
+        </table>
+             </section>
+               <section>
+        <div class="header">Cost Matrix</div>
+        <table>
+            <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <td>0</td>
+                <td>15</td>
+                <td>10</td>
+                <td>INF</td>
+                <td>30</td>
+                <td>INF</td>
+            </tr>
+            <tr>
+                <th>B</th>
+                <td>15</td>
+                <td>0</td>
+                <td>5</td>
+                <td>20</td>
+                <td>INF</td>
+                <td>INF</td>
+            </tr>
+            <tr>
+                <th>C</th>
+                <td>10</td>
+                <td>5</td>
+                <td>0</td>
+                <td>5</td>
+                <td>25</td>
+                <td>INF</td>
+            </tr>
+            <tr>
+                <th>D</th>
+                <td>INF</td>
+                <td>20</td>
+                <td>5</td>
+                <td>0</td>
+                <td>10</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <th>E</th>
+                <td>30</td>
+                <td>INF</td>
+                <td>25</td>
+                <td>10</td>
+                <td>0</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>F</th>
+                <td>INF</td>
+                <td>INF</td>
+                <td>INF</td>
+                <td>15</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+        </table>
+             </section>
+                  <section>
+
+        <div class="header">Reachable Intersections</div>
+        <table>
+            <tr>
+                <th>Intersection</th>
+                <th>Distance</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>30</td>
+            </tr>
+        </table>
+             </section>
+                 <section>
+        <div class="header">Shortest Paths</div>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Path</th>
+                <th>Total Cost</th>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>A -> B</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>A -> C</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>A -> C -> D</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>A -> C -> D -> E</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>A -> C -> D -> F</td>
+                <td>30</td>
+            </tr>
+        </table>
+        </section>
 
     </main>
 </body>
